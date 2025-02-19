@@ -39,7 +39,7 @@ nav {
 
 nav img {
     color: red;
-    width: 114px;
+    width: 140px;
     position: relative;
     z-index: 10;
 }
@@ -87,15 +87,31 @@ nav button {
 }
 
 .separation {
-    height: 3px;
+    height: 2px;
     background-color: #ae0624;
+    background: linear-gradient(to right, black 10%, red 50%, black 90%);
 }
 
 .btn {
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    color:white;
+    background-color: rgba(248, 243, 243, 0.342);
+    border: 1px solid white;
     border-radius: 4px;
+    cursor: pointer;
+}
+
+.main input{
+   /* padding: 0.90rem 4.5rem;*/
+   padding: 14px 220px 16px 20px;
+   color:white;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(23,23,23,0.2);
+    border: 1px solid rgba(240, 231, 231, 0.945);
+    border-radius: 6px;
+    
 }
 
 .btn-red {
@@ -106,18 +122,6 @@ nav button {
     font-weight: 500;
     border-radius: 6px;
 
-}
-
-.main input{
-   /* padding: 0.90rem 4.5rem;*/
-   
-   padding: 14px 220px 16px 20px;
-    font-size: 16px;
-    font-weight: 400;
-    background-color: rgba(23,23,23,0.2);
-    border: 1px solid rgba(240, 231, 231, 0.945);
-    border-radius: 6px;
-    
 }
 
 .btn-red-sm {
@@ -134,4 +138,122 @@ display: flex;
 align-items: center;
 justify-content: center;
 gap: 10px;
+}
+
+.first{
+    display:flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color:white;
+    align-items:center;
+}
+
+section.first > div{
+    display:flex;
+    flex-direction: column;
+}
+
+.first > div :first-child{
+    font-family: "Roboto", serif;
+    font-size: 48px;
+    font-weight: 600;
+
+}
+
+.first > div :nth-child(2){
+    font-family: "Roboto", serif;
+    font-size:20px;
+    font-weight: 400;
+
+}
+
+
+.secImg {
+    position: relative;
+    width: 30vw; /* Keeping it consistent with the image */
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    margin-top: 3px; /* Adds spacing to prevent overlapping */
+}
+
+.secImg img {
+    width: 100%; /* Making the image responsive */
+    position: relative;
+    z-index: 10; /* Ensures the TV image stays above the video */
+}
+
+.secImg video {
+    position: absolute;
+    top: 16%;
+    left: 13.5%;
+    width: 73%;
+    height: 63%;
+    object-fit: cover; /* Ensures the video fills the TV screen properly */
+    z-index: 5; /* Places it below the TV image */
+}
+
+.faq{
+    background: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 24px;
+    font-weight:500;
+    font-family: "Roboto", serif;
+}
+
+.faq-box{
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(45, 45, 45);
+    font-size: 24px;
+    font-weight:400;
+    font-family: "Roboto", serif;
+    padding:24px;
+    width:100%;
+    max-width:60vw;
+    margin: 34px auto;
+    cursor:pointer;
+    transition:all;
+}
+
+.faq-box:hover{
+    background-color: rgb(67, 69, 68);
+}
+
+footer{
+    color:white;
+    max-width:60vw;
+    margin:auto;
+    padding: 34px;
+    
+}
+
+.questions{
+    padding: 34px 0px;
+}
+
+footer a{
+    font-size: 14px;
+    font-weight:400;
+    font-family: "Roboto", serif;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item{
+    display:flex;
+    flex-direction: column;
+    gap:23px;
 }
