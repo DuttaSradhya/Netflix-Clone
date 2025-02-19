@@ -257,3 +257,60 @@ footer a{
     flex-direction: column;
     gap:23px;
 }
+
+/* added new sections */
+.reasons-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #000;
+    color: white;
+    font-family: "Roboto", serif;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: center; /* Centers items instead of uneven spacing */
+    gap: 1.5rem;
+    max-width: 1200px; /* Adjust according to layout */
+    margin: 0 auto; /* Centers the container */
+    flex-wrap: nowrap; /* Ensures everything stays in one row */
+    padding: 0 1rem; /* Prevents excessive right margin */
+}
+
+.reason-card {
+    flex: 1; /* Make all cards equal width */
+    min-width: 250px;
+    max-width: 280px;
+    text-align: left;
+    background: linear-gradient(135deg, #141414, #1f1f1f);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(255, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.reason-card:hover {
+    transform: translateY(-5px);
+}
+
+.reason-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reason-card p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin-bottom: 1rem;
+}
+
+.reason-card img {
+    width: 50px;
+    height: auto;
+}
